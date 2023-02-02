@@ -6,13 +6,13 @@ This is a book record management API Backend for themanagement of records and bo
 
 ## /users
 
-POST:Create a new user
-GET: GEt all list of users
+POST:Create a new user✅
+GET: GEt all list of users ✅
 
 ## /users/{id} ==>> dynamic users
 
-GET: Get a user by id
-PUT: Update a user by id
+GET: Get a user by id✅
+PUT: Update a user by id✅
 DELETE: Delete a user by id (check if he/she still has an issued book.)
 
 ## /users/subscription-details/{id}
