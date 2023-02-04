@@ -29,7 +29,8 @@ app.get("*",(req,res)=>{  // other todos it gives error
     res.status(404).json({
         message :"This route does not exist",
     })
-})
+});
+
 app.listen(PORT,() =>{
     console.log(`Server is running at port ${PORT}`);
 });
