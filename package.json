@@ -18,7 +18,9 @@
   },
   "homepage": "https://github.com/Mansoor-343/book__record__management#readme",
   "dependencies": {
-    "express": "^4.18.2"
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "mongoose": "^6.9.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.20"

@@ -195,7 +195,7 @@ router.get("/subscription-details/:id", (req, res)=>{
 
     const data = {
         ...user,
-        subscriptionExpired : subscriptionExpiration > currentDate,
+        subscriptionExpired : subscriptionExpiration < currentDate,
         daysLeftForExpiration:
             subscriptionExpiration <= currentDate 
             ? 0

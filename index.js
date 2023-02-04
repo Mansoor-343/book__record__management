@@ -1,13 +1,16 @@
 const express = require("express");
-
+const dotenv = require('dotenv');
+// database connection
+const DbConnection = require("./databaseConnection");
 // importing routes
 const usersRouter = require("./routes/users");
 const booksRouter = require("./routes/books");
 
-
+dotenv.config();
 
 const app = express();
 
+DbConnection();
 
 const PORT =  8081;
 
@@ -28,6 +31,6 @@ app.get("*",(req,res)=>{  // other todos it gives error
     })
 })
 app.listen(PORT,() =>{
-    console.log(`Server is rinning at port ${PORT}`);
+    console.log(`Server is running at port ${PORT}`);
 });
 
